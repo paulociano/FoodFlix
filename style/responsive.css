@@ -1,0 +1,18 @@
+@media screen and (max-width: 700px){
+    header .container{
+        margin-bottom:8px;
+        display: flex;
+        flex-direction: column;
+        }
+    main .container{
+        width: 80%;
+        margin-bottom:10px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .filme-principal {
+        align-items: center;
+        height: 300px;
+    }
+
+}

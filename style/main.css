@@ -1,0 +1,140 @@
+:root{
+    --verde: #3a9a6a;
+    --preto: #242732;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Base*/
+
+body{
+    background: var(--preto);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+header .logo{
+    color: var(--verde);
+    font-family: 'Arial Black';
+    margin-left: 8px;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+header nav a:hover {
+    color:white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Filme Principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.80)100%), url('../img/CAPA\ FOOD\ INC.jpg');
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.filme-principal .info {
+    font-size: 14px;
+    margin-bottom: 15px;
+    flex-direction: row;
+    display: flex;
+    color:#3a9a6a;
+}
+
+.info1{
+    display: flex;
+    align-items: center;
+}
+
+.info2{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+main .container{
+    margin-left: 15px;
+    margin-top: 100px;
+    width: 50%;
+    text-align: justify;
+    margin-bottom:40px;
+}
+
+.filme-principal .botoes{
+    margin-left: 15px;
+    display: flex;
+}
+
+.botao1{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    background-color: var(--verde);
+    border-radius: 20px;
+    border:none;
+    height:35px
+}
+
+.botao2{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    background-color: var(--verde);
+    margin-left: 15px;
+    border-radius: 20px;
+    border:none;
+    height: 35px;
+}
+
+.botao1:hover{
+    color:black;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.botao2:hover{
+    color:black;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.material-icons{
+    margin-right:5px;
+}
+
+.item{
+    height: 100%;
+    width: 100%;
+}
+
