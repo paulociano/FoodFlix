@@ -1,97 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!--OWL CSS-->
-    <link rel='stylesheet' href='./style/owl/owl.carousel.min.css'>
-    <link rel='stylesheet' href='./style/owl/owl.theme.default.min.css'>
-
-    <!--Responsividade-->
-    <link rel='stylesheet' href='./style/responsive.css'>
-
-    <title>FOODFLIX</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101512">
+  <meta name="description" content="FoodFlix: uma curadoria de filmes, séries e documentários sobre gastronomia, cultura e alimentação.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./style/responsive.css">
+  <title>FoodFlix</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h2 class='logo'>FOODFLIX</h2>
-            <nav class='menu'>
-                <a href="#">Início</a>
-                <a href="#">Filmes</a>
-                <a href="#">Séries</a>
-                <a href="#">Documentários</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="filme-principal">
-            <div class="container">
-                <h3 class='titulo'>FOOD, INC.</h3>
-                <div class="info">
-                    <div class="info1">
-                        <i class="material-icons">calendar_month</i><h4 class='ano'>2008</h4>
-                    </div>
-                    <div class="info2">
-                        <i class="material-icons">schedule</i><h4 class='duracao'>1h34m</h4>
-                    </div>
-                </div>
-                <p class='descricao'>Os autores investigam a cadeia de produção dos alimentos nos EUA, desde a manipulação e o monopólio de grãos e cereais à criação e abate de animais para consumo, expondo a fragilidade dos organismos de fiscalização e os danos causados à sociedade.</p>
-            </div>
-            <div class='botoes'>
-                <button role="button" class='botao1'>
-                    <i class="material-icons">play_arrow</i>
-                    ASSISTIR
-                </button>
-                <button role='button' class='botao2'>
-                    <i class="material-icons">insights</i>
-                    + INFO
-                </button>
-            </div>
-        </div>
-    </main>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-    <div class="carrossel-filmes">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img src="./img/comidascheiasdehistoria.jpg" alt="Comidas Cheias de Histórias">
-            </div>
-            <div class="item">
-                <img src="./img/comidasinimaginaveis.jpg" alt="Comidas Inimagináveis">
-            </div>
-            <div class="item">
-                <img src="./img/emdefesadacomida.jpg" alt="Em Defesa da Comida">
-            </div>
-            <div class="item">
-                <img src="./img/futurodosalimentos.jpg" alt="O Futuro dos Alimentos">
-            </div>
-            <div class="item">
-                <img src="./img/gigantes-alimentos.jpg" alt="Gigantes dos Alimentos">
-            </div>
-            <div class="item">
-                <img src="./img/lagrandemalbouffe.jpg" alt="La Grande Malbouffe">
-            </div>
-            <div class="item">
-                <img src="./img/manfirefood.jpg" alt="Man Fire Food">
-            </div>
-            <div class="item">
-                <img src="./img/narotadosabor.jpg" alt="Na Rota do Sabor">
-            </div>
-            <div class="item">
-                <img src="./img/star-vs-food.jpg" alt="Stars vs. Food">
-            </div>
-            <div class="item">
-                <img src="./img/street-food-asia.jpg" alt="Street Food: Asia">
-            </div>
-        </div>
+  <header class="site-header" id="topo">
+    <div class="shell header-inner">
+      <a class="brand" href="#topo" aria-label="FoodFlix, início">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span class="brand-word">FoodFlix</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu-principal" aria-label="Navegação principal">
+        <a class="is-active" href="#destaque">Início</a>
+        <a href="#colecao">Filmes</a>
+        <a href="#colecao">Séries</a>
+        <a href="#colecao">Documentários</a>
+      </nav>
     </div>
+  </header>
 
-    <script src='js/owl/jquery.min.js'></script>
-    <script src='./js/owl/owl.carousel.min.js'></script>
-    <script src='./js/owl/setup.js'></script>
+  <main id="conteudo">
+    <section class="hero" id="destaque" aria-labelledby="hero-title">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="shell hero-content">
+        <p class="eyebrow">Destaque da semana</p>
+        <h1 id="hero-title">Food, Inc.</h1>
 
+        <div class="meta-row" aria-label="Informações do título">
+          <span>2008</span>
+          <span>1h 34min</span>
+          <span class="rating">Documentário</span>
+        </div>
+
+        <p class="hero-copy">
+          Uma investigação sobre a cadeia de produção dos alimentos nos Estados Unidos, seus monopólios,
+          impactos ambientais e os efeitos desse sistema na vida das pessoas.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button" data-action="watch">
+            <span aria-hidden="true">▶</span>
+            Assistir
+          </button>
+          <button class="btn btn-secondary" type="button" data-action="info">
+            <span aria-hidden="true">＋</span>
+            Mais informações
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog shell" id="colecao" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Curadoria FoodFlix</p>
+          <h2 id="catalog-title">Para continuar explorando</h2>
+        </div>
+        <p class="section-note">Histórias sobre comida, cultura, indústria e memória.</p>
+      </div>
+
+      <div class="owl-carousel owl-theme poster-carousel" aria-label="Catálogo de títulos">
+        <article class="poster-card">
+          <img src="./img/comidascheiasdehistoria.jpg" alt="Comidas Cheias de Histórias" loading="lazy">
+          <div class="poster-overlay"><h3>Comidas Cheias de Histórias</h3><span>Explorar</span></div>
+        </article>
+        <article class="poster-card">
+          <img src="./img/comidasinimaginaveis.jpg" alt="Comidas Inimagináveis" loading="lazy">
+          <div class="poster-overlay"><h3>Comidas Inimagináveis</h3><span>Explorar</span></div>
+        </article>
+        <article class="poster-card">
+          <img src="./img/emdefesadacomida.jpg" alt="Em Defesa da Comida" loading="lazy">
+          <div class="poster-overlay"><h3>Em Defesa da Comida</h3><span>Explorar</span></div>
+        </article>
+        <article class="poster-card">
+          <img src="./img/futurodosalimentos.jpg" alt="O Futuro dos Alimentos" loading="lazy">
+          <div class="poster-overlay"><h3>O Futuro dos Alimentos</h3><span>Explorar</span></div>
+        </article>
+        <article class="poster-card">
+          <img src="./img/gigantes-alimentos.jpg" alt="Gigantes dos Alimentos" loading="lazy">
+          <div class="poster-overlay"><h3>Gigantes dos Alimentos</h3><span>Explorar</span></div>
+        </article>
+        <article class="poster-card">
+          <img src="./img/lagrandemalbouffe.jpg" alt="La Grande Malbouffe" loading="lazy">
+          <div class="poster-overlay"><h3>La Grande Malbouffe</h3><span>Explorar</span></div>
+        </article>
+        <article class="poster-card">
+          <img src="./img/manfirefood.jpg" alt="Man Fire Food" loading="lazy">
+          <div class="poster-overlay"><h3>Man Fire Food</h3><span>Explorar</span></div>
+        </article>
+        <article class="poster-card">
+          <img src="./img/narotadosabor.jpg" alt="Na Rota do Sabor" loading="lazy">
+          <div class="poster-overlay"><h3>Na Rota do Sabor</h3><span>Explorar</span></div>
+        </article>
+        <article class="poster-card">
+          <img src="./img/star-vs-food.jpg" alt="Stars vs. Food" loading="lazy">
+          <div class="poster-overlay"><h3>Stars vs. Food</h3><span>Explorar</span></div>
+        </article>
+        <article class="poster-card">
+          <img src="./img/street-food-asia.jpg" alt="Street Food: Asia" loading="lazy">
+          <div class="poster-overlay"><h3>Street Food: Asia</h3><span>Explorar</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial shell" aria-label="Sobre a experiência FoodFlix">
+      <div class="editorial-card">
+        <p class="eyebrow">Mais do que assistir</p>
+        <h2>Comida também conta histórias.</h2>
+        <p>
+          O FoodFlix reúne títulos que ajudam a enxergar alimentação por novos ângulos:
+          tradição, identidade, sustentabilidade, indústria e afeto.
+        </p>
+      </div>
+      <div class="editorial-stat">
+        <strong>10</strong>
+        <span>títulos selecionados nesta curadoria</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>FoodFlix</p>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="./js/owl/jquery.min.js"></script>
+  <script src="./js/owl/owl.carousel.min.js"></script>
+  <script src="./js/owl/setup.js"></script>
 </body>
 </html>
